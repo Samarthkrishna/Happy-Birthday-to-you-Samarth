@@ -2,7 +2,7 @@
   "use strict";
 
   // PERSONALIZE THESE TWO VALUES.
-  const BIRTHDAY_NAME = "Birthday Star";
+  const BIRTHDAY_NAME = "Birthday boy Samarth";
   // Optional: set a birthday date as "YYYY-MM-DD" if you later want a countdown.
   // This version intentionally avoids a countdown until a real date is provided.
 
