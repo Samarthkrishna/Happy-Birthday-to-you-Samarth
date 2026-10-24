@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100b24">
+  <meta name="description" content="A little birthday universe made with love.">
+  <title>Happy Birthday ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Back to top">
+      <span class="brand-mark">✦</span><span>little birthday universe</span>
+    </a>
+    <button class="music-pill" id="musicToggle" type="button" aria-pressed="false">
+      <span class="music-icon" aria-hidden="true">♫</span>
+      <span id="musicLabel">Play our song</span>
+      <span class="equalizer" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+  </header>
+
+  <main id="home">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A day made for celebrating you</p>
+        <h1>Happy Birthday,<br><em id="heroName">Birthday Star</em><span class="sparkle">✦</span></h1>
+        <p class="hero-description">Today, the world gets a little brighter because <strong>you’re in it.</strong> Here’s a tiny corner of the internet made just to celebrate you.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#memories">Explore your moments <span aria-hidden="true">↘</span></a>
+          <button class="button button-quiet" id="wishButton" type="button"><span aria-hidden="true">✧</span> Make a wish</button>
+        </div>
+        <div class="hero-note"><span class="note-dot"></span> Made with love, just for you</div>
+      </div>
+
+      <div class="portrait-stage">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="orbit-star star-a">✦</div><div class="orbit-star star-b">✧</div><div class="orbit-star star-c">✦</div>
+        <div class="portrait-frame">
+          <div class="portrait-glow"></div>
+          <img id="mainPhoto" src="images/birthday-boy-main.jpg" alt="Birthday star" class="main-photo">
+          <div class="photo-placeholder" id="mainPhotoPlaceholder">
+            <span class="placeholder-icon">✧</span>
+            <strong>Your favorite photo goes here</strong>
+            <small>Add your photo as <code>birthday-boy-main.jpg</code><br>inside the <code>images</code> folder</small>
+          </div>
+          <div class="portrait-caption"><span class="caption-star">✦</span><span><b>THE MAIN CHARACTER</b><small>Today and always</small></span></div>
+        </div>
+        <div class="floating-note note-top"><span>✧</span> one of a kind</div>
+        <div class="floating-note note-bottom"><span>♡</span> so loved</div>
+      </div>
+      <div class="scroll-cue"><span></span> SCROLL TO FEEL THE MAGIC</div>
+    </section>
+
+    <section class="wish-banner section-shell" aria-label="Birthday message">
+      <div class="banner-star">✦</div>
+      <div><p class="eyebrow">A little reminder</p><h2>You deserve all the beautiful things<br class="desktop-only"> life has been saving for you.</h2></div>
+      <div class="banner-signature">with love <span>♡</span></div>
+    </section>
+
+    <section class="memories section-shell" id="memories">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> The little things become everything</p><h2>Moments worth <em>keeping.</em></h2></div>
+        <p class="section-intro">Add your favorite photos and turn this page into a memory box that feels like you.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <figure class="gallery-card gallery-large"><img src="images/photo-1.jpg" alt="Birthday memory one"><div class="gallery-placeholder"><span>01</span><b>A favorite memory</b><small>Add photo-1.jpg</small></div><figcaption><span>01 / A favorite memory</span><b>✦</b></figcaption></figure>
+        <figure class="gallery-card"><img src="images/photo-2.jpg" alt="Birthday memory two"><div class="gallery-placeholder"><span>02</span><b>Big smiles</b><small>Add photo-2.jpg</small></div><figcaption><span>02 / Big smiles</span><b>✦</b></figcaption></figure>
+        <figure class="gallery-card"><img src="images/photo-3.jpg" alt="Birthday memory three"><div class="gallery-placeholder"><span>03</span><b>Good days</b><small>Add photo-3.jpg</small></div><figcaption><span>03 / Good days</span><b>✦</b></figcaption></figure>
+        <figure class="gallery-card"><img src="images/photo-4.jpg" alt="Birthday memory four"><div class="gallery-placeholder"><span>04</span><b>Unforgettable</b><small>Add photo-4.jpg</small></div><figcaption><span>04 / Unforgettable</span><b>✦</b></figcaption></figure>
+        <figure class="gallery-card"><img src="images/photo-5.jpg" alt="Birthday memory five"><div class="gallery-placeholder"><span>05</span><b>Just being you</b><small>Add photo-5.jpg</small></div><figcaption><span>05 / Just being you</span><b>✦</b></figcaption></figure>
+        <figure class="gallery-card"><img src="images/photo-6.jpg" alt="Birthday memory six"><div class="gallery-placeholder"><span>06</span><b>More memories</b><small>Add photo-6.jpg</small></div><figcaption><span>06 / More memories</span><b>✦</b></figcaption></figure>
+      </div>
+      <p class="gallery-hint"><span>✧</span> Your photos stay yours — no stock photos are included in this project.</p>
+    </section>
+
+    <section class="message-section section-shell">
+      <div class="message-card">
+        <div class="message-decoration decoration-one">✦</div><div class="message-decoration decoration-two">♡</div>
+        <p class="eyebrow">A note for your new chapter</p>
+        <h2>May this year bring you<br><em>closer to your dreams.</em></h2>
+        <p class="message-body">More reasons to laugh. More places to explore. More people who see the wonderful things in you. And, on the difficult days, the reminder that you are loved more than you know.</p>
+        <div class="signature">Here’s to you <span>♡</span></div>
+      </div>
+    </section>
+
+    <section class="finale section-shell" id="finale">
+      <div class="finale-orb" aria-hidden="true"><span>✦</span><i></i></div>
+      <p class="eyebrow">One last thing…</p>
+      <h2>Close your eyes.<br><em>Make a wish.</em></h2>
+      <p class="finale-copy">Ready to make this little moment sparkle?</p>
+      <button class="button button-primary button-big" id="celebrateButton" type="button">Let the magic happen <span aria-hidden="true">✦</span></button>
+      <p class="finale-footnote">Your next chapter starts now.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">✦</span><span>made for a star like you</span></a>
+    <p>Made with care <span>♡</span> and a little bit of stardust.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo">×</button>
+    <img id="lightboxImage" alt="Expanded birthday memory">
+  </div>
+  <audio id="birthdaySong" preload="metadata" loop>
+    <source src="birthday-music.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
